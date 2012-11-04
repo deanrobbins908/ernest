@@ -1,7 +1,9 @@
 require 'spec_helper'
 
 describe "StaticPages" do
-  
+
+
+//Home Page Tests  
   describe "Home" do
   	
   	it "Should have the content 'Home'" do
@@ -15,6 +17,7 @@ describe "StaticPages" do
   	end
   end
 
+//Contact Us Tests
   describe "Contact Us" do
     
     it "Should have the content 'Contact Us'" do
