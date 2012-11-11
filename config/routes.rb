@@ -1,7 +1,11 @@
 Ernest::Application.routes.draw do
-  get "static_pages/home"
 
-  get "static_pages/contactus"
+  get "users/new"
+
+  root to: 'static_pages#home'
+  
+  match '/signup',  to: 'users#new'
+  match '/contactus', to: 'static_pages#contactus' 
 
 
   # The priority is based upon order of creation:
