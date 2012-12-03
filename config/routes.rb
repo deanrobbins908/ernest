@@ -1,6 +1,7 @@
 Ernest::Application.routes.draw do
+  resources :users
 
-  get "users/new"
+  # get "users/new" -  (Dean) No longer necessary because the resources 'endows' with all the actions need for a RESTful Users Resouce
 
   root to: 'static_pages#home'
   
