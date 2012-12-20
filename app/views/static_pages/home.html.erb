@@ -1,19 +1,37 @@
 
 <% provide(:title, 'Home') %>
 
-<div class="center hero-unit">
-	<h1>Welcome to the Ernest</h1>
-	<h2>
-		This is the home page for the
-		<b>Ernest</b>
-		Project.
-	</h2>
 
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
+	<div class = "move2">
+	
 
-<div class="row-fluid">
-  <div class="span4">This area is the column on the left and is this long. It should not get any longer</div>
-  <div class="span8">...</div>
+  <div class = "card-bg" > 
+
+
+
+  <h1>NO MORE CONFUSION.<br />  FIND THE RIGHT CARD.</h1><br />
+
+
+
+
+
+  	  <%= form_for(@user) do |f| %>
+
+   		<%= render 'shared/error_messages' %>
+
+
+      <%= f.text_field :email, size: 10, placeholder: "ENTER YOUR EMAIL TO TRY IT OUT" %>
+
+
+      <%= f.submit "PICK THE CARD YOU ACTUALLY WANT", class: "btn-custom" %>
+    <% end %>
+
+  	
+ 
+ </div>
+
+  <div class = "login-bg" <p> Already registered? Log in here </p> 
+
+
 </div>
-	<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+</div>

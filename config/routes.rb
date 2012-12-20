@@ -1,13 +1,17 @@
 Ernest::Application.routes.draw do
   resources :users
+  
+ 
 
   # get "users/new" -  (Dean) No longer necessary because the resources 'endows' with all the actions need for a RESTful Users Resouce
 
   root to: 'static_pages#home'
   
   match '/signup',  to: 'users#new'
-  match '/contactus', to: 'static_pages#contactus' 
+  match '/contactus', to: 'static_pages#contactus'
+  match '/chooser', to: 'static_pages#chooser'
 
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

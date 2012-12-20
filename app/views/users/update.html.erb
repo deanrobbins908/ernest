@@ -1,0 +1,22 @@
+<% provide(@user.email) %>
+
+<div class ="move2">
+
+<div class = "show-cards">
+
+	<h1> LET'S FIND THE PERFECT CARD FOR YOU </h1>
+	<h2> HERE ARE 5 SIMPLE QUESTIONS </h2>
+
+<div class="field">
+
+	<%= form_for(@user) do |f| %>
+  <%= f.label :tag_list, "Tags (separated by commas)" %><br />
+  <%= f.text_field :tag_list %>
+
+  <% end %>
+</div>
+
+
+</div>
+
+</div>

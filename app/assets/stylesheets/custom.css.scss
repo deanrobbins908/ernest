@@ -17,11 +17,26 @@ html {
 }
 
 body {
-  padding-top: 60px;
+
+  background-image: url('dark_wall.png');
+  margin-top: 5%;
+  
+  height: 100%;
+  padding: 0;
+
 }
 
+span {
+  height: 100%;
+
+
+}
+
+
+
 section {
-  overflow: auto;
+  overflow: visible;
+  height: 100%;
 }
 
 textarea {
@@ -38,67 +53,255 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+  font-size: 2.6em;
+  margin-bottom: 10px;
   text-align: center;
+  padding-top: 75px;
+  color: #3C3737;
 }
 
 h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $grayLight;
+  font-size: 1.5em;
+  text-align: left;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+
+  letter-spacing: .2px;
+  color: gray;
+
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  padding-top: 15px;
+  font-size: 1.4em;
+  text-align: center;
+  color: #6D7B8D;
+  line-height: 1;
+
+}
+
+/* my divs */
+
+.move2{
+position:relative;top:-20;
 }
 
 
-/* header */
+.card-bg {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+  position: relative;
+ 
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-  &:hover {
-    color: white;
-    text-decoration: none;
+  background-image: url('extra_clean_paper.png');
+  
+  width: 450px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+
+
+  h1 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-weight: bold;
+    color: #3C3737;
+    letter-spacing: -1.5px;
+    padding-bottom: 75px;
   }
+
+}
+
+.login-bg {
+  -moz-box-shadow:    inset 0 0 10px #282828;
+  -webkit-box-shadow: inset 0 0 10px #282828;
+  box-shadow:         inset 0 0 10px #282828;
+
+  background-color: rgba(5, 5, 5, .1);
+  position: relative;
+
+  height: 35px;
+  width: 450px;
+  margin: auto;
+
+  
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 1.2em;
+  line-height: 2em;
+  text-align: center;
+  color: #6D7B8D;
+
+}
+
+
+.btn-custom {
+
+
+  position: relative;
+  display:inline-block;
+ 
+  
+  height: 35px;
+  
+   width: 80% !important;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+
+
+  text-align: center;
+
+  background-color: #6D7B8D;
+
+  border-color: #6D7B8D #6D7B8D hsl(201, 100%, 25%);
+
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+
+  font-size: 1.3em;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -1.5px;
+
+
+  -moz-box-shadow:    inset 0 0 15px #282828;
+  -webkit-box-shadow: inset 0 0 15px #282828;
+  box-shadow:         inset 0 0 15px #282828;
+
+
+ 
+     -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px;
+
+}
+
+
+.move2{
+  position:relative;top:-20;
+}
+
+.show-cards {
+
+  position:relative;top:-20;
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  position: relative;
+ 
+
+  background-image: url('extra_clean_paper.png');
+  
+  width: 960px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+
+  h1 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-weight: bold;
+    color: #3C3737;
+    letter-spacing: -1.5px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-size: 2.2em; 
+    border-bottom-style:dashed;
+    border-bottom-width: 1px;
+
+  }
+
+    a {
+    color: #6D7B8D;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    text-align: center;
+    font-size: 1.4em;
+
+    &:hover { 
+      color: #F2F2F2;
+    }
+  }  
+ 
+  ul {
+    list-style: none;
+    li {
+      float: left;
+      margin: 25px;
+  
+    }
+  }
+}
+
+
+.answers {
+  padding-left: 280px;
+}
+.span6 {
+    h1 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-weight: bold;
+    color: #6D7B8D;
+    letter-spacing: -1.2px;
+    padding-top: 15px;
+    font-size: 1.6em; 
+    padding-bottom: 0px;
+
+    border-bottom-style:none;
+    border-bottom-width: 1px;
+  } h2 {
+ margin-top: 0px;
+    padding-right: 10px;
+    padding-left:10px;
+letter-spacing: -1.2px;
+    border-right-style:solid;
+    border-right-width: 1px;
+
+  }
+
 }
 
 /* footer */
 
 footer {
-  margin-top: 45px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;  
+  margin-top: -20px;
+  margin-top: 10px; 
+  height: 30px;
+  clear:both;
+  padding-top:20px;
+  margin-top: 15px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  background-color: black;
   a {
-    color: $gray;
+    color: #6D7B8D;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+    line-height: 2em;
     &:hover { 
-      color: $grayDarker;
+      color: #F2F2F2;
     }
   }  
   small { 
     float: left; 
   }
   ul {
-    float: right;
+    float: left;
     list-style: none;
     li {
       float: left;
@@ -117,49 +320,39 @@ footer {
   @include box_sizing;
 }
 
+
 /* sidebar */
 
-aside {
-  section {
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-    }
-  }
-}
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
+
+
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  @include box_sizing;
+
+
+
+form input, form textarea, form select {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+ 
+    font-size: 44px;
+    height: 45px !important;
+      font-size: 2.3em;
 }
 
-input {
-  height: auto !important;
+input, textarea, select, .uneditable-input {
+
+
+
+  height: 45px;
+  margin-bottom: 15px;
+  @include box_sizing;
+
+
 }
+
 
 #error_explanation {
   color: #f00;
